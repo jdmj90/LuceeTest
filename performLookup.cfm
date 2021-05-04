@@ -19,9 +19,9 @@
 	<cfquery name = "extractOrder" datasource = "luceeproject" result="orderInformation" maxRows = "1">
 			select * from orders
 			where 
-				orderNumber = "#formOrderNumber#"
+				orderNumber = <cfQueryParam value = "#formOrderNumber#" cfsqlType= "CF_SQL_INTEGER">
 				and
-				lastName = "#formLastName#"
+				lastName = <cfQueryParam value = "#formLastName#" cfsqlType= "CF_SQL_VARCHAR" maxLength="45">
 	</cfquery>
 
 	<cfif orderInformation.RecordCount LT 1>
