@@ -1,0 +1,30 @@
+body	{
+	background: #a2bed2;
+}
+.result	{
+	width:50%;
+}
+.button a {
+
+}
+.button {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding:5px;
+	width:200px;
+}
+
+#insertOrderform, #LookUpOrderForm	{
+	margin: 10px;
+}
+
+.insertform{
+	margin:5px;
+
+}
+
+.result	{
+	margin: 5px;
+}
+
+	
