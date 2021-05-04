@@ -10,7 +10,11 @@
 			#session.message#
 		</div>
 	</cfoutput>
+	<cfset session.message = "">
 </cfif>
+
+<!--- no preserve data yet in lucee --->
+
 <cfform action = "insertneworder.cfm" name="customerlookup" id = "insertOrderform">
 	<div class="insertform">First name: <cfinput name = "firstName"type = "text" required = "yes" maxLength="45"></div>
 	<div class="insertform">Last name: <cfinput name = "lastName" type = "text" required = "yes" maxLength="45"></div>

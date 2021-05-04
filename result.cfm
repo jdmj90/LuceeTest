@@ -16,8 +16,7 @@
 			<div class="result">First Name: #extractOrder.firstName# </div>
 			<div class="result">Last Name: #extractOrder.lastName# </div>
 			<div class="result">City Name: #extractOrder.City# </div>
-			<div class="result">Address: #extractOrder.Address1# </div>
-			<div class="result">         #extractOrder.Address2# </div>
+			<div class="result"><div class="formInline addressBlock">Address:</div> <div class="formInline"> #extractOrder.Address1# <br/>#extractOrder.Address2# </div> </div>
 			<div class="result">State: #extractOrder.State# </div>
 			<div class="result">Zip: #extractOrder.Zip# </div>
 		</div>
@@ -28,7 +27,7 @@
 		<cfset session.order = 0>	
 
 	<cfelseif session.order EQ -1>
-		<div class="result"> Order could not be found. </div>
+		<div class="resultform"> Order could not be found. </div>
 		<div class="button"><a href="/index.cfm">Return to Main Page</a> </div>
 		<cfset session.order = 0>
 		</body>

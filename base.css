@@ -7,11 +7,14 @@ body	{
 .button a {
 
 }
+
 .button {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding:5px;
 	width:200px;
+	background:lightgrey;
+	margin-top:5px;
 }
 
 #insertOrderform, #LookUpOrderForm	{
@@ -27,4 +30,25 @@ body	{
 	margin: 5px;
 }
 
-	
+.errorMessage
+{
+	background:seashell;
+	border:1px solid darkred;
+	border-radius:5px;
+	padding:5px;
+}
+
+.resultform	{
+	background:#EEEEEE;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.formInline	{
+	display:inline-block;
+}
+
+.formInline.addressBlock	{
+	vertical-align:top;
+}
